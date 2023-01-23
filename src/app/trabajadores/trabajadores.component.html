@@ -1,0 +1,15 @@
+<!-- interpolar la variable titulo en el h3 -->
+<h3 style="text-align:'center'">{{title}} </h3><br>
+
+<div class="row row-cols-1 row-cols-md-6">
+  <!-- Definir la etiqueta para incluir *ngFor, paso de datos a card-trabajador
+    y recepción de eventos del hijo -->
+  <app-card-trabajador
+      *ngFor="let trabajador of trabajadores"
+      [trabajador]="trabajador"
+      (eventoBorrar)="borrar($event)"
+      (eventoLike)="like($event)"
+      (eventoUnlike)="unlike($event)">
+  </app-card-trabajador>
+</div>
+

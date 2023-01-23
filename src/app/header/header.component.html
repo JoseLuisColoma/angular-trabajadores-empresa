@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+   <h2 routerLink="/" class="text-danger">DWEC (Tienda con Angular)</h2>
+  </a>
+  <a>Artículos</a>
+  <button routerLink="/trabajadores">Trabajadores</button>
+
+  <button (click)="irA()">Articulos</button>
+
+  <button [routerLink]="['/clientes']">Clientes</button>
+  <img src="./../../assets/img/cart.png" height="35px" (click)="hola()">
+</nav>
